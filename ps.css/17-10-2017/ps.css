@@ -1,0 +1,2326 @@
+ /*V7*/
+/*ÚLTIMA ATUALIZAÇÃO - 02/05/2017*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* STYLE PRA DEIXAR A LISTA TABELADA SEM SCROLL VERTICAL */
+/* overflow-y-hidden - DEVE FICAR JUNTO DA CLASE .list */
+
+/* STYLE PRA RETIRAR BORDA DO BOTTOM DO ELEMENTO */
+/* border-bottom-width-0 - DEVE-SE COLOCAR NO ELEMENTO QUE DESEJA TIRAR A BORDA*/
+
+/* ALTERNAR COR DA LISTA TABELADA USA-SE A CLASSE .alternating-color NA DIV ONDE ESTÁ A CLASSE .LIST OU
+DIRETO NA TABLE CASO NÃO EXISTA A DIV COM A CLASSE .LIST */
+
+/* REGRAS DE CSS */
+/* caso o hr ficar abaixo da tag que tiver o class line, deverá ficar com margin-top: 1px e margin-bottom: 1px pra não deixar os campos do line tão longe do hr */
+/* ===============================================================================================================-A-================================================================================================================ */
+
+/* ===============================================================================================================-B-================================================================================================================ */
+/* background-color */
+button {
+    background-color: transparent;
+}
+
+div.list.hover tbody tr:hover,
+div.list-tbody.hover tbody tr:hover,
+table.hover tbody tr:hover,
+tbody tr.selected  {
+    background-color: #a1beda !important;
+}
+
+div.list.alternating-color div table > tbody > tr:nth-child(2n+2),
+div.list-tbody.alternating-color div table > tbody > tr:nth-child(2n+2),
+table.alternating-color > tbody > tr:nth-child(2n+2) {
+    background-color: #CFDBE7;
+}
+
+.error,
+.red {
+    background-color: #C90200;
+}
+
+.info,
+.light-blue {
+    background-color: #32bfea;
+}
+
+.grey {
+    background-color: #8a8888;
+}
+
+input,
+select,
+textarea,
+div.fake-textarea,
+ul.tabs > li > a {
+    background-color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    background-color: transparent;
+}
+
+/* O CLASS .CRM-POPUP DEVE SER USADO SOMENTE QUANDO O POPUP FOR CHAMADA DIRETO PELA FUNÇÃO EXTRA DA APLICAÇÃO*/
+/* SE O POPUP FOR CHAMADO POR UMA TELA SPEC, ENTÃO NESSE CASO É PRA USAR O CLASS .POPUP*/
+html.crm-popup,
+html.popup {
+    background-color: #FFFCF4;
+}
+
+html,
+html.adm-funcao-extra body,
+.shadow,
+input[disabled],
+input[disabled="disabled"],
+select[disabled],
+select[disabled="disabled"],
+textarea[disabled],
+textarea[disabled="disabled"],
+.buttons-tabs-navigation,
+fieldset {
+    background-color: #f4f4f4;
+}
+
+.warning,
+.orange {
+    background-color: #F28D00;
+}
+
+.success,
+.green {
+    background-color: #009736;
+}
+
+.primary,
+.blue {
+    background-color: #0166B4;
+}
+
+div.list table thead th.order-Z-a-A:hover,
+div.list table thead th.order-A-a-Z:hover,
+div.list table thead th.selected,
+div.list table thead th.selected + th:last-child,
+div.list table thead th.order-A-a-Z:hover + th:last-child
+/*desabilitado caso usar o transition*/
+/*,div.list table thead th.order-Z-a-A:hover + th:last-child*/
+ {
+    background-color: #56717f;
+}
+
+div.list > div:first-child,
+div.list thead,
+table thead,
+legend {
+    background-color: #7EA5B8;
+}
+
+ul.tabs li a.tab-active,
+ul.tabs li a:hover {
+    background-color: #9BB9C8;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+    background-color: #f4f4f4;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+    background-color: #93a4ad;
+}
+
+/* Fim background-color */
+/* border*/
+/* O CLASS .CRM-POPUP DEVE SER USADO SOMENTE QUANDO O POPUP FOR CHAMADA DIRETO PELA FUNÇÃO EXTRA DA APLICAÇÃO*/
+/* SE O POPUP FOR CHAMADO POR UMA TELA SPEC, ENTÃO NESSE CASO É PRA USAR O CLASS .POPUP*/
+html.crm-popup.ie8,
+html.popup.ie8 {
+    border: 0;
+}
+
+input[type='radio'],
+input[type='checkbox'] {
+    border: 0 !important;
+}
+
+/* border-color */
+.border-transparent {
+    border-color: transparent !important;
+}
+
+button.grey {
+    border-color: #797575;
+}
+
+button.warning,
+button.orange {
+    border-color: #b36a06;
+}
+
+button.success,
+button.green {
+    border-color: #025b22;
+}
+
+button.primary,
+button.blue {
+    border-color: #02355d;
+}
+
+div.list-tbody,
+table tr td,
+div.list,
+ul.list li,
+table {
+    border-color: #7EA5B8;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        border-color: #CCCCCC;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+        border-color: #87A6B5;
+}
+/*=============================================================================================================================*/
+.shadow,
+button.default,
+hr {
+    border-color: #7088C5;
+}
+
+button.error,
+button.red {
+    border-color: #970604;
+}
+
+ul.tabs li a {
+    border-color: #CCCCCC;
+}
+
+/*button.error,
+button.red, {
+    border-color: #C90200;
+}*/
+
+button.info,
+button.light-blue {
+    border-color: #3ca4c3;
+}
+
+input,
+select,
+textarea,
+.fake-textarea {
+    /* border-color: #E0E0E0; ESTAVA SEM DESTAQUE QUANDO O CAMPO ESTAVA DESABILITADO NOS BACKGROUND COM A COR #F4F4F4*/
+    border-color: #bdbdbd;
+}
+
+fieldset,
+div.list,
+div.list-tbody,
+.frame {
+    border-color: #7EA5B8;
+}
+
+ul.tabs li a.tab-active,
+ul.tabs li a:hover {
+    border-color: #87A6B5;
+}
+
+/* Fim border-color */
+
+/*background-image*/
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {
+    background-image: url(/plusoft-resources/images/icones/setaAzul.gif);
+}
+
+/*remove imagem caso não seja necessário*/
+.line > [class^="col-"].align-right.without-img > label:before,
+.line > [class^="col-"].align-right.without-img > span:before,
+.line > [class^="col-"].align-right.without-img > strong:before,
+.inline > [class^="col-"].align-right.without-img > label:before,
+.inline > [class^="col-"].align-right.without-img > span:before,
+.inline > [class^="col-"].align-right.without-img > strong:before {
+    background-image: url('') !important;
+}
+
+/* border-bottom-color */
+
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-color: #ffffff;
+}
+
+table thead {
+    border-bottom-color: #7EA5B8;
+}
+
+/* Fim border-bottom-color */
+
+/* border-right-color */
+/*div.list > div {
+    border-right-color: #7EA5B8;
+}*/
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-color: transparent;
+}
+/* Fim border-right-color */
+div.list table thead th.order-A-a-Z:before {
+    border-top-color: #ffffff;
+}
+
+/* border-bottom-style */
+table thead,
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-style: solid;
+}
+
+/* Fim border-bottom-style */
+
+/* border-bottom-width */
+table thead {
+    border-bottom-width: 2px;
+}
+
+div.list table thead {
+    border-bottom-width: 0;
+}
+
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-width: 5px;
+}
+
+/* Fim border-bottom-width */
+
+/* border-left-width */
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-width: 5px;
+}
+
+/* Fim border-left-width */
+
+/* border-right-width */
+
+/*div.list > div {
+    border-right-width: 2px;
+}*/
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-width: 5px;
+}
+
+/* Fim border-right-width */
+
+/* border-top-width */
+div.list table thead th.order-A-a-Z:before {
+    border-top-width: 5px;
+}
+
+/* Fim border-top-width */
+
+/* border-left-color */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-color: transparent;
+}
+
+/* Fim border-left-color */
+
+/* border-left-style */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-style: solid;
+}
+
+/* border-left-style */
+
+/* border-right-style */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-style: solid;
+}
+
+/* Fim border-right-style */
+div.list table thead th.order-A-a-Z:before {
+    border-top-style: solid;
+}
+
+/* border-radius */
+fieldset,
+ul.tabs + .shadow {
+    border-bottom-left-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+fieldset,
+ul.tabs + .shadow {
+    border-bottom-right-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+legend {
+    border-bottom-right-radius: 0.5em;
+}
+
+ul.tabs + .shadow {
+    border-top-left-radius: 0
+}
+
+.shadow,
+div.list div table th:first-child {
+    border-top-left-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+ul.tabs li a,
+legend {
+    border-top-left-radius: 0.5em;
+}
+
+fieldset {
+    border-top-left-radius: 0.6em;
+}
+
+ul.tabs + .shadow {
+    border-top-right-radius: 0
+}
+
+fieldset,
+ul.tabs + .shadow,
+div.list div table th:last-child {
+    border-top-right-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+
+}
+
+ul.tabs li a {
+    border-top-right-radius: 0.5em;
+}
+
+input,
+select,
+textarea,
+div.list,
+div.list-tbody,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    border-radius: 3px;
+}
+
+input[type="radio"],
+input[type="checkbox"],
+legend.col-24 {
+    border-radius: inherit;
+}
+
+/* Fim border-radius */
+
+/* border-style */
+ul.tabs li a,
+.shadow,
+input,
+select,
+textarea,
+select,
+textarea,
+fieldset,
+div.list,
+div.list-tbody,
+table,
+table tr td,
+ul.list li,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+.fake-textarea,
+.frame,
+hr {
+    border-style: solid;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border-style: inherit;
+}
+/* Fim border-style */
+/* border-width */
+button,
+div.list table,
+div.list-tbody table {
+    border-width: 0;
+}
+
+.shadow,
+input,
+select,
+textarea,
+select,
+textarea,
+fieldset,
+div.list,
+div.list-tbody,
+table,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+.fake-textarea,
+.frame {
+    border-width: 1px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border-width: inherit;
+}
+
+div.buttons-tabs-navigation {
+    width: auto;
+}
+/* Fim border-width */
+/* border-width */
+ul.list > li > ul > li {
+    border-width: 0;
+}
+
+ul.tabs li a,
+.border-bottom-width-0,
+hr {
+    border-bottom-width: 0;
+}
+
+table tr td,
+ul.list li {
+    border-bottom-width: 1px;
+}
+
+ul.tabs li a {
+    border-width: 0.15em 0.1em 0;
+}
+
+/* Fim border-width */
+
+/* box-shadow */
+button.grey:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #797575;
+}
+
+button.primary:hover,
+button.blue:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #02355d;
+}
+
+button.success:hover,
+button.green:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #025b22;
+}
+
+button.warning:hover,
+button.orange:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #b36a06;
+}
+
+.shadow,
+button.default:hover,
+ul.tabs li a:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+}
+
+button.error:hover,
+button.red:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #970604;
+}
+
+button.info:hover,
+button.light-blue:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #3ca4c3;
+}
+
+button[disabled]:hover,
+button[disabled="disabled"]:hover,
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        box-shadow: rgb(112, 136, 197) 0 0 0 0;;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+        box-shadow: rgb(112, 136, 197) 0 0 0 0;
+}
+
+/* Fim box-shadow */
+
+/* box-sizing */
+[class^="col-"],
+fieldset,
+div.list,
+div.list-tbody,
+input,
+select,
+textarea,
+a,
+span,
+strong,
+label,
+th,
+td,
+li,
+legend,
+button,
+.frame,
+.shadow {
+    box-sizing: border-box;
+}
+/* Fim  box-sizing */
+/* ===============================================================================================================-C-================================================================================================================ */
+/* color */
+/*div.list.hover tbody tr:hover,
+div.list-tbody.hover tbody tr:hover,
+table.hover tbody tr:hover {
+    color: inherit;
+}*/
+
+ul.tabs li a.tab-active,
+ul.tabs li a:hover,
+th,
+legend,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+button.grey,
+tbody tr.selected {
+    color: #fff;
+}
+
+.color-red,
+div.mandatory > label:after {
+    color: #da1a1a;
+}
+
+.color-blue {
+    color: #0166B4;
+}
+
+input[readonly],
+input[readonly="readonly"],
+select[readonly],
+select[readonly="readonly"],
+textarea[readonly],
+textarea[readonly="readonly"] {
+    color: #545454;
+}
+ul.tabs li a {
+    color: #87A6B5;
+}
+
+.header-transparent tr th {
+    color: #000000;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+    color: #a5a3a3;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+    color: #e6e6e6;
+}
+/* Fim color */
+
+/* cursor */
+span[title],
+img[title],
+label[title],
+button:hover,
+div.list table thead th.order-Z-a-A:hover,
+div.list table thead th.order-A-a-Z:hover,
+ul.tabs li a,
+div.list.hover tbody tr:hover,
+div.list-tbody.hover tbody tr:hover,
+table.hover tbody tr:hover,
+tbody tr.selected {
+    cursor: pointer;
+}
+
+button[disabled]:hover,
+button[disabled="disabled"]:hover,
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        cursor: default;
+}
+
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before,
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {
+    content: "";
+}
+
+div.mandatory > label:after {
+    content: "*";
+}
+
+/* Fim cursor */
+/* ===============================================================================================================-D-================================================================================================================ */
+/* display */
+[class^="col-"] label + input[type="checkbox"],
+[class^="col-"] label + input[type="radio"],
+.label-break,
+tbody tr.no-registry:first-child,
+tbody tr.no-registry tr,
+tbody tr.no-registry td {
+    display: block;
+}
+
+fieldset.minimized > legend,
+fieldset.minimized > legend * {
+    display: initial !important;
+}
+ul li {
+    display: table;
+}
+/* .line > label[class^="col-"].align-left:after, 
+.line > span[class^="col-"].align-left:after, 
+.line > strong[class^="col-"].align-left:after {
+    display: none
+} */
+
+tbody tr.no-registry,
+fieldset.minimized * {
+    display: none;
+}
+
+ul.tabs,
+ul.tabs li,
+ul.tabs li a,
+ul.list > li > ul > li,
+.line,
+.inline,
+label,
+span,
+div,
+.frame,
+[class^="col-"] {
+    display: inline-block;
+}
+
+/* Fim display */
+/* ===============================================================================================================-E-================================================================================================================ */
+
+/* ===============================================================================================================-F-================================================================================================================ */
+/* float */
+label input,
+label select {
+    float: inherit;
+}
+
+[class^="col-"],
+legend,
+nav,
+ul.tabs,
+ul.tabs li,
+fieldset,
+.frame,
+div.list > div,
+div.list-tbody > div,
+[class^="col-"] + hr,
+.line-legend,
+.line,
+.inline {
+    float: left;
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before,
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before,
+.buttons-tabs-navigation,
+div.mandatory > label:after {
+    float: right;
+}
+
+/* Fim float */
+
+/* font-family */
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fim font-family */
+
+/* font-size */
+body * {
+    font-size: 11px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
+
+h4 {
+    font-size: 2.1em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+/* Fim font-size */
+
+/* font-weight */
+strong,
+fieldset legend,
+table th,
+ul.tabs li a,
+strong, b {
+    font-weight: bold;
+}
+
+/* Fim font-weight */
+/* ===============================================================================================================-G-================================================================================================================ */
+
+/* ===============================================================================================================-H-================================================================================================================ */
+button.default,
+button.grey,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    height: inherit;
+}
+
+th button,
+td button {
+    height: inherit !important;
+}
+
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {
+    height: 7px;
+}
+
+input,
+li,
+legend,
+label,
+.col-break,
+.buttons-tabs-navigation {
+    height: 20px;
+}
+
+nav,
+ul.tabs,
+ul.tabs li,
+ul.tabs li a,
+.refresh {
+    height: 20px;
+}
+
+html.adm-funcao-extra form > .tabs + div.shadow > div:first-child div.list div:first-child + div {
+    height: 465px;
+}
+
+html.adm-funcao-extra form > .tabs + div.shadow {
+    height: 548px;
+}
+
+/* ===============================================================================================================-I-================================================================================================================ */
+
+/* ===============================================================================================================-J-================================================================================================================ */
+
+/* ===============================================================================================================-K-================================================================================================================ */
+
+/* ===============================================================================================================-L-================================================================================================================ */
+legend.col-24 {
+    left: 10px;
+}
+
+.label-break {
+    line-height: 10px;
+}
+
+.line,
+.inline,
+html.ie8 input {
+    line-height: 14px;
+}
+
+br {
+    line-height: 17px;
+}
+
+body form.shadow > .shadow + .line.align-right {
+    line-height: 16px;
+}
+
+th,
+td,
+li,
+a {
+    line-height: 18px;
+}
+
+.line > [class^="col-"] > label,
+.line > [class^="col-"] > span,
+.line > [class^="col-"] > strong,
+span,
+label,
+strong,
+select,
+.col-break,
+p,
+legend,
+div.list th,
+div.list td {
+    line-height: 20px;
+}
+/* ===============================================================================================================-M-================================================================================================================ */
+div[class^="col-"].align-center > button {
+    margin: 0;
+}
+
+legend {
+    margin: -2.3em -0.6em;
+}
+input[type="checkbox"]
+input[type="radio"],
+input[type="checkbox" i],
+input[type="radio" i] {
+    margin: 0;
+}
+
+label > input[type="checkbox"],
+label > input[type="radio"],
+span > input[type="checkbox"],
+span > input[type="radio"],
+strong > input[type="checkbox"],
+strong > input[type="radio"],
+th > input[type="checkbox"],
+th > input[type="radio"],
+td > input[type="checkbox"],
+td > input[type="radio"] {
+    margin: 0 3px;
+}
+
+.line fieldset,
+.list table,
+.line table {
+    margin-bottom: 0;
+}
+
+.line {
+    margin-bottom: 3px;
+}
+
+div.list,
+div.list-tbody {
+    /*margin-bottom: 5px;*/
+}
+
+.shadow {
+    /*margin-bottom: 3px;*/
+}
+
+.line + hr {
+    margin-bottom: 1px;
+}
+
+fieldset {
+    /*margin-bottom: 6px;*/
+}
+
+fieldset > legend + textarea {
+    margin-bottom: 0.8em;
+}
+
+.without-margin-left {
+    margin-left: initial !important;
+}
+
+/*div[class^="col-"] > div.list,
+div[class^="col-"] > fieldset,*/
+div[class^="col-"] > button,
+div[class^="col-"] > label,
+div.list table thead th.order-Z-a-A.order-A-a-Z:before,
+div.list table,
+div.list-tbody table,
+.line table,
+html.adm-funcao-extra body > form {
+    margin-left: 0;
+}
+
+div.mandatory > label:after {
+    margin-left: 2px;
+}
+
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before,
+button > span {
+    margin-left: 3px;
+}
+
+.line.align-right > button,
+[class^="col-"].align-right > button {
+    margin-left: 5px
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    margin-left: 7px;
+}
+
+[class^="col-"].offset-1 {
+    margin-left: 4.166666666666667% !important;
+}
+
+[class^="col-"].offset-2 {
+    margin-left: 8.333333333333334% !important;
+}
+
+[class^="col-"].offset-3 {
+    margin-left: 12.5% !important;
+}
+
+[class^="col-"].offset-4 {
+    margin-left: 16.66666666666667% !important;
+}
+
+[class^="col-"].offset-5 {
+    margin-left: 20.83333333333334% !important;
+}
+
+[class^="col-"].offset-6 {
+    margin-left: 25% !important;
+}
+
+[class^="col-"].offset-7 {
+    margin-left: 29.16666666666667% !important;
+}
+
+[class^="col-"].offset-8 {
+    margin-left: 33.33333333333334% !important;
+}
+
+[class^="col-"].offset-9 {
+    margin-left: 37.5% !important;
+}
+
+[class^="col-"].offset-10 {
+    margin-left: 41.66666666666667% !important;
+}
+
+[class^="col-"].offset-11 {
+    margin-left: 45.83333333333334% !important;
+}
+
+[class^="col-"].offset-12 {
+    margin-left: 50% !important;
+}
+
+[class^="col-"].offset-13 {
+    margin-left: 54.16666666666667% !important;
+}
+
+[class^="col-"].offset-14 {
+    margin-left: 58.33333333333334% !important;
+}
+
+[class^="col-"].offset-15 {
+    margin-left: 62.50000000000001% !important;
+}
+
+[class^="col-"].offset-16 {
+    margin-left: 66.66666666666667% !important;
+}
+
+[class^="col-"].offset-17 {
+    margin-left: 70.83333333333334% !important;
+}
+
+[class^="col-"].offset-18 {
+    margin-left: 75.00000000000001% !important;
+}
+
+[class^="col-"].offset-19 {
+    margin-left: 79.16666666666667% !important;
+}
+
+[class^="col-"].offset-20 {
+    margin-left: 83.33333333333334% !important;
+}
+
+[class^="col-"].offset-21 {
+    margin-left: 87.50000000000001% !important;
+}
+
+[class^="col-"].offset-22 {
+    margin-left: 91.66666666666667% !important;
+}
+
+[class^="col-"].offset-23 {
+    margin-left: 95.83333333333334% !important;
+}
+
+[class^="col-"].offset-24 {
+    margin-left: 100% !important;
+}
+
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {   
+    margin-right: -2px;
+}
+
+div.list table thead th.order-A-a-Z.order-Z-a-A:after {
+    margin-right: -10px;
+}
+
+.line.align-right > button,
+[class^="col-"].align-right > button {
+    margin-right: 0;
+}
+
+div[class^="col-"].align-center > button + button {
+    margin-right: 2px;
+}
+
+button > span {
+    margin-right: 3px;
+}
+
+.line > button,
+[class^="col-"] > button {
+    margin-right: 5px;
+}
+
+/*esconde a borda da linha da tr no final da lista pra não grudar com a borda da lista*/
+div.list > div:first-child + div > table {
+    margin-bottom: -1px;
+}
+
+ul.tabs {
+    margin-bottom: -2px;
+}
+
+.line > [class^="col-"] > .list {
+    margin-bottom: -3px;
+}
+
+button,
+[class^="col-"] + hr {
+    margin-top: 0;
+}
+
+/* estiliza pelo src */
+/*[src~="/plusoft-resources/images/botoes/new.gif"] {
+    margin-top: 2px;
+}
+*/
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    margin-top: 0;
+}
+
+.line + hr {
+    margin-top: -1px;
+}
+
+div.buttons-tabs-navigation {
+    margin-top: -18px;
+}
+
+div.list table thead th.order-A-a-Z.order-Z-a-A:after {
+    margin-top: 2px;
+}
+
+/* [class^="col-"] label + input[type="checkbox"],
+[class^="col-"] label + input[type="radio"] {
+    margin-top: 3px;
+} */
+
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {
+    margin-top: 7px;
+}
+
+div.list table thead th.order-Z-a-A.order-A-a-Z:before {
+    margin-top: 9px;
+}
+
+.col-break,
+.line-break {
+    margin-top: 20px;
+}
+
+.line + hr + .line {
+    margin-top: 0.3em;
+}
+
+.line > [class^="col-"].col-break > button {
+    margin-top: -2px;
+}
+
+.line-legend {
+    margin-top: -25px;
+}
+
+html.adm-funcao-extra body > form {
+    margin-top: -3px;
+}
+
+th button > img,
+td button > img {
+    max-height: 26px;
+    /*max-height: 18px;*/
+}
+
+button > img {
+    max-height: 20px;
+}
+
+select,
+button,
+.inline {
+    min-height: 20px;
+}
+
+.fake-textarea,
+textarea {
+    min-height: 30px;
+}
+
+ul.tabs li > a,
+fieldset > legend {
+    min-width: 80px;
+}
+
+fieldset > legend + textarea {
+    margin-top: 0.3em;
+}
+
+/* ===============================================================================================================-N-================================================================================================================ */
+
+/* ===============================================================================================================-O-================================================================================================================ */
+/* outline-width: inherit => REMOVE A BORDA DO BOTÃO QUANDO TINHA FOCU*/
+button {
+    outline-width: inherit;
+}
+
+button[disabled],
+button[disabled="disabled"],
+button[disabled] > img,
+button[disabled="disabled"] > img {
+    opacity: 0.7;
+}
+
+html.adm-funcao-extra form > .tabs + div.shadow {
+    overflow: auto;
+}
+
+/* overflow-y */
+html.adm-funcao-extra,
+.scroll-horizontal > div:first-child,
+ul.tabs {
+    overflow: hidden;
+}
+
+.fake-textarea,
+div.list > div:first-child + div,
+div.list-tbody > div:first-child,
+textarea {
+    overflow-y: scroll;
+}
+
+ul.list,
+html.crm-manifestacao,
+html.crm-pessoa,
+html.crm body,
+.shadow {
+    overflow-y: auto;
+}
+
+/* Fim overflow-y */
+div.list > div:first-child,
+div.list-tbody > div:first-child,
+.fake-textarea {
+    overflow-x: hidden;
+}
+
+div.list.overflow-y-hidden > div:first-child + div,
+div.list-tbody.overflow-y-hidden > div:first-child + div {
+    overflow-y: hidden;
+}
+
+div.scroll-horizontal > div:first-child + div {
+    overflow: scroll;
+}
+
+div.list > div:first-child + div {
+    overflow-x: auto;
+}
+
+/* ===============================================================================================================-P-================================================================================================================ */
+
+/* O CLASS .CRM-POPUP DEVE SER USADO SOMENTE QUANDO O POPUP FOR CHAMADA DIRETO PELA FUNÇÃO EXTRA DA APLICAÇÃO*/
+/* SE O POPUP FOR CHAMADO POR UMA TELA SPEC, ENTÃO NESSE CASO É PRA USAR O CLASS .POPUP*/
+html.crm-funcao-extra body,
+html.crm-pessoa body,
+html.crm-manifestacao body {
+    padding: 5px 7px;
+}
+
+html.crm-popup.ie8,
+button,
+html.popup.ie8,
+ul.tabs li,
+ul.tabs,
+.shadow div.list,
+html.adm-funcao-extra body {
+    padding: 0;
+}
+
+form.shadow > .line.align-right {
+    padding: 3px 0;
+}
+
+fieldset {
+    padding: 25px 5px 0;
+}
+
+fieldset.minimized {
+    padding: 15px 5px 5px;
+}
+
+.frame {
+    padding: 6px 5px 0;
+}
+
+button.default,
+button.grey,
+button.error,
+button.red,
+button.info,
+button.light-blue,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    /*padding: 0 0.5em 0;*/
+    padding: 0 7px;
+}
+
+div.list > div:first-child table thead th:last-child {
+    padding: 0 0.8em;
+}
+
+p {
+    padding: 0.5em;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+select,
+input {
+  padding: 1px 2px;
+}
+
+html.popup body {
+    padding: 5px;
+}
+
+.shadow {
+    padding: 5px 7px 0;
+}
+
+html.crm-popup body{
+    padding: 5px 9px 5px 5px;
+}
+
+legend {
+    padding-bottom: 0.1em;
+}
+
+.shadow > ul.tabs {
+    padding-left: 0;
+}
+
+.line > div[class^="col-"],
+.inline > div[class^="col-"] {
+    padding-left: 3px;
+}
+
+ul.tabs li > a {
+    padding-left: 7px;
+}
+
+html.crm-manifestacao body,
+html.crm-pessoa body {
+    padding-left: 12px;
+}
+
+legend {
+    padding-left: 1em;
+}
+
+.shadow > ul.tabs,
+.line > [class^="col-"].align-right.without-img > label,
+.line > [class^="col-"].align-right.without-img > span,
+.line > [class^="col-"].align-right.without-img > strong,
+.inline > [class^="col-"].align-right.without-img > label:after,
+.inline > [class^="col-"].align-right.without-img > span:after,
+.inline > [class^="col-"].align-right.without-img > strong:after {
+    padding-right: 0;
+}
+
+legend {
+    padding-right: 1em;
+}
+
+.line > div[class^="col-"],
+.inline > div[class^="col-"] {
+    padding-right: 3px;
+}
+
+ul.tabs li > a {
+    padding-right: 7px;
+}
+
+html {
+    padding: 0.1em;
+}
+
+th,
+td {
+    padding: 0 4px;
+}
+
+ul li {
+    padding: 0 0 0 1em;
+}
+
+.shadow ul.tabs {
+    padding-top: 0;
+}
+
+html.crm-manifestacao body,
+html.crm-pessoa body,
+html.crm {
+    padding-top: 5px;
+}
+
+.label-break {
+    padding-top: 0.32em;
+}
+
+legend.col-24 {
+    position: absolute;
+}
+
+ul.tabs,
+div.buttons-tabs-navigation {
+    position: relative;
+}
+/* ===============================================================================================================-Q-================================================================================================================ */
+
+/* ===============================================================================================================-R-================================================================================================================ */
+textarea {
+    resize: none;
+}
+
+/* ===============================================================================================================-S-================================================================================================================ */
+
+/* ===============================================================================================================-T-================================================================================================================ */
+label,
+span,
+strong,
+div,
+th {
+    text-align: left;
+}
+
+.align-left {
+    text-align: left !important;
+}
+
+ul.tabs li > a,
+fieldset > legend {
+    text-align: center;
+}
+
+.align-center,
+tbody tr.no-registry {
+    text-align: center !important;
+}
+
+.align-right {
+    text-align: right;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.capitalize,
+td[class^="email"] {
+    text-transform: none;
+}
+
+input:-webkit-autofill, 
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:active, 
+input:-webkit-autofill:visited, 
+input:-webkit-autofill:focus input:-webkit-autofill, 
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, 
+select:-webkit-autofill, 
+select:-webkit-autofill:hover, 
+select:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.tabs a,
+.tabs a:hover,
+button:hover,
+div.list.hover tbody tr:hover,
+div.list.hover tbody tr,
+div.list table thead th:hover,
+div.list table thead th {
+        transition: 0.2s ease-in;   
+-webkit-transition: 0.2s ease-in;
+   -moz-transition: 0.2s ease-in;
+     -o-transition: 0.2s ease-in;
+}
+
+
+/* ===============================================================================================================-U-================================================================================================================ */
+strong,
+span,
+label,
+li,
+a {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+/* ===============================================================================================================-V-================================================================================================================ */
+td > button {
+    vertical-align: auto;
+}
+
+th > button {
+    vertical-align: text-bottom;
+}
+
+button > img,
+button > span,
+label > img {
+    vertical-align: middle;
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
+    vertical-align: middle;
+}
+
+th,
+td,
+button,
+input,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+td .checkRed,
+td > img,
+[class^="col-"] > img {
+    vertical-align: sub;
+}
+
+span > input[type="radio"],
+span > input[type="checkbox"],
+strong > input[type="radio"],
+strong > input[type="checkbox"],
+html.ie11 td > input[type='radio'],
+html.ie11 td > input[type='checkbox'] {
+    vertical-align: text-bottom;
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before,
+input[type="checkbox"],
+input[type="radio"] {
+    vertical-align: text-top;
+}
+
+html.ie8 button > img {
+    vertical-align: top;
+}
+
+html {
+    visibility: hidden;
+}
+
+/* ===============================================================================================================-W-================================================================================================================ */
+
+button {
+    white-space: nowrap;
+}
+
+ul.tabs li {
+    width: auto;
+}
+
+.line > [class^="col-"].align-right > label:before,
+.line > [class^="col-"].align-right > span:before,
+.line > [class^="col-"].align-right > strong:before,
+.inline > [class^="col-"].align-right > label:before,
+.inline > [class^="col-"].align-right > span:before,
+.inline > [class^="col-"].align-right > strong:before {
+    width: 7px;
+}
+
+.col-1 {
+    width: 4.166666666666667%;
+}
+
+.col-2 {
+    width: 8.333333333333334%;
+}
+
+.col-3 {
+    width: 12.5%;
+}
+
+.col-4 {
+    width: 16.66666666666667%;
+}
+
+.col-5 {
+    width: 20.83333333333334%;
+}
+
+.col-6 {
+    width: 25%;
+}
+
+.col-7 {
+    width: 29.16666666666667%;
+}
+
+.col-8 {
+    width: 33.33333333333334%;
+}
+
+.col-9 {
+    width: 37.5%;
+}
+
+.col-10 {
+    width: 41.66666666666667%;
+}
+
+.col-11 {
+    width: 45.83333333333334%;
+}
+
+.col-12 {
+    width: 50%;
+}
+
+.col-13 {
+    width: 54.16666666666667%;
+}
+
+.col-14 {
+    width: 58.33333333333334%;
+}
+
+.col-15 {
+    width: 62.50000000000001%;
+}
+
+.col-16 {
+    width: 66.66666666666667%;
+}
+
+.col-17 {
+    width: 70.83333333333334%;
+}
+
+.col-18 {
+    width: 75.00000000000001%;
+}
+
+.col-19 {
+    width: 79.16666666666667%;
+}
+
+.col-20 {
+   width: 83.33333333333334%;
+}
+
+.col-21 {
+    width: 87.50000000000001%;
+}
+
+.col-22 {
+   width: 91.66666666666667%;
+}
+
+.col-23 {
+    width: 95.83333333333334%;
+}
+
+p {
+    width: 97.5%;
+}
+
+hr {
+    width: 98.8%;
+}
+
+fieldset > .tabs + .shadow {
+    width: 99.06%;
+}
+
+fieldset > [class^="col-"] > div.list,
+fieldset > [class^="col-"] > div.list-tbody {
+    width: 99.7% !important;
+}
+
+.line > [class^="col-"] > input,
+.line > [class^="col-"] > select,
+.line > [class^="col-"] > textarea,
+.line,
+.inline,
+td input,
+td select,
+td textarea,
+fieldset,
+div,
+.line table,
+div.list table,
+div.list-tbody table,
+html.adm-funcao-extra body > form,
+ul li,
+.col-24,
+table,
+fieldset  {
+    width: 100%;
+}
+
+.line [class^="col-"] input[type="radio"],
+.line [class^="col-"] input[type="checkbox"],
+td input[type="radio"],
+td input[type="checkbox"] {
+    width: auto;
+}
+/* ===============================================================================================================-X-================================================================================================================ */
+
+/* ===============================================================================================================-Y-================================================================================================================ */
+
+/* ===============================================================================================================-Z-================================================================================================================ */
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+/*===============================================================================================================-A-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-B-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-C-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-D-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-E-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-F-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-G-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-H-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-I-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-J-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-K-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-L-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-M-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-N-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-O-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-P-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-Q-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-R-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-S-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-T-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-U-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-V-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-W-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-X-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-Y-IE-=============================================================================================================== */
+
+/* ==============================================================================================================-Z-IE-=============================================================================================================== */
+    
+}
+/*FIM HACK IE*/
+
+@-moz-document url-prefix() {
+    /* ============================================================================================================-A-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-B-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    .shadow,
+    button.default:hover,
+    ul li a:hover {
+        -moz-box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+    }
+    /* ============================================================================================================-C-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-D-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-E-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-F-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-G-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-H-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    /*input[type="checkbox"], 
+    input[type="radio"] {
+        height: 20px;
+    }*/
+    /*firefox*/
+    input, 
+    li, 
+    legend,
+    label,
+    strong,
+    span,
+    .col-break {
+        height: 21px;
+    }
+    
+    /*firefox*/
+    input[type="file"] {
+        height: initial !important;
+    }
+    /* ============================================================================================================-I-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-J-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-K-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-L-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    input,
+    select {
+        line-height: inherit;
+    }
+
+    .line > [class^="col-"] > label, 
+    .line > [class^="col-"] > span, 
+    .line > [class^="col-"] > strong, 
+    span, 
+    label, 
+    strong, 
+    .col-break, 
+    p, 
+    legend, 
+    div.list th, 
+    div.list td {
+        line-height: 23px;
+    }
+
+    /* ============================================================================================================-M-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    /*removido porque no rodaé dos botões do cadastro eles ficam grudados*/
+    /*.line.align-right > button,*/    
+
+    div.list table thead th.order-Z-a-A.order-A-a-Z:before,
+    .line > [class^="col-"] > input[type="range"] {
+        margin-left: 0;
+    }
+
+    /*firefox*/
+    .checkbox-checked-all-true {
+        margin-right: -6px !important;
+    }
+
+    /*firefox*/
+    button > img {
+        margin-top: -1px;
+    }
+
+    .col-break, .line-break {
+        margin-top: 23px;
+    }
+
+
+    /*firefox*/
+    select, button {
+        min-height: 23px;
+    }
+    /* ============================================================================================================-N-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-O-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-P-FIREFOX-============================================================================================================= */
+    /*firefox*/    
+    html {
+        padding: 0 2px
+    }
+    /*firefox*/    
+    select {
+        padding: 2px;
+    }
+    /* ============================================================================================================-Q-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-R-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-S-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-T-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-U-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-V-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    button > img {
+        vertical-align: initial;
+    }
+
+    /*firefox*/
+    td > button > img {
+        vertical-align: inherit;
+    }
+    
+    /*firefox*/
+    button > img {
+        vertical-align: text-top;
+    }
+
+    /*firefox*/
+    th > button {
+        vertical-align: bottom;
+    }
+    /* ============================================================================================================-W-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-X-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-Y-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-Z-FIREFOX-============================================================================================================= */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* =============================================================================================================-A-CHROME-============================================================================================================= */
+    /* =============================================================================================================-B-CHROME-============================================================================================================= */
+    /*chrome*/
+    .shadow,
+    /* button.default:hover, */
+    ul.tabs li a:hover {
+        -webkit-box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+    }
+
+    /* =============================================================================================================-C-CHROME-============================================================================================================= */
+    /* =============================================================================================================-D-CHROME-============================================================================================================= */
+    /* =============================================================================================================-E-CHROME-============================================================================================================= */
+    /* =============================================================================================================-F-CHROME-============================================================================================================= */
+    /* =============================================================================================================-G-CHROME-============================================================================================================= */
+    /* =============================================================================================================-H-CHROME-============================================================================================================= */
+    /*chrome*/
+    input[type="checkbox"], 
+    input[type="radio"] {
+        /*height: 20px;*/
+    }
+    /* =============================================================================================================-I-CHROME-============================================================================================================= */
+    /* =============================================================================================================-J-CHROME-============================================================================================================= */
+    /* =============================================================================================================-K-CHROME-============================================================================================================= */
+    /* =============================================================================================================-L-CHROME-============================================================================================================= */
+    /* =============================================================================================================-M-CHROME-============================================================================================================= */
+    /*chrome*/
+    legend {
+        margin: -26px -6px;
+    }
+    
+    fieldset.minimized > legend {
+        margin: -15px -6px;
+    }
+    
+    /*chrome*/
+    .line + hr {
+        margin-top: 0px;
+    }
+    /* =============================================================================================================-N-CHROME-============================================================================================================= */
+    /* =============================================================================================================-O-CHROME-============================================================================================================= */
+    /* =============================================================================================================-P-CHROME-============================================================================================================= */
+    /*chrome*/
+    div.list > div:first-child table thead th:last-child {
+        padding: 0 0.7em;
+    }
+
+    /*chrome*/
+    div.list.scroll-horizontal > div:first-child table thead th:last-child {
+        padding: 0 1.8em;
+    }
+    
+    /* =============================================================================================================-Q-CHROME-============================================================================================================= */
+    /* =============================================================================================================-R-CHROME-============================================================================================================= */
+    /* =============================================================================================================-S-CHROME-============================================================================================================= */
+    /* =============================================================================================================-T-CHROME-============================================================================================================= */
+    /* =============================================================================================================-U-CHROME-============================================================================================================= */
+    /* =============================================================================================================-V-CHROME-============================================================================================================= */
+    /*chrome*/
+    th > button {
+        vertical-align: bottom;
+    }
+    /* =============================================================================================================-W-CHROME-============================================================================================================= */    
+    /*chrome*/
+    fieldset {
+        /*width: 99.75%;*/
+        width: 100%;
+    }
+
+    /* =============================================================================================================-X-CHROME-============================================================================================================= */
+    /* =============================================================================================================-Y-CHROME-============================================================================================================= */
+    /* =============================================================================================================-Z-CHROME-============================================================================================================= */
+}
+
+/*teste de abas com navegação pelas setas de direção(esquerda, direita)*/
+
+[class^="col-"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.tabs {
+    overflow: hidden;
+    /*width: 1000000%;*/
+}
+
+.tabs + .shadow {
+    margin-top: 2px
+}
+
+
+/*
+ul li a.tab-active,
+ul li a:hover {
+    color: #ffffff;
+    border-color: #87A6B5;
+    background-color: #9BB9C8;
+    text-decoration: none;
+    padding: 0 1em;
+    font-weight: bold;
+    border-width: 0.15em 0.1em 0;
+    border-style: solid;
+    border-radius: 0.5em 0.5em 0 0;
+    line-height: 18px;
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    padding: 0 1em;
+    font-weight: bold;
+    border-width: 0.15em 0.1em 0;
+    border-style: solid;
+    border-radius: 0.5em 0.5em 0 0;
+    line-height: 18px;
+    border-color: #CCCCCC;
+    color: #87A6B5;
+}
+
+html.popup {
+    display: inline;
+}
+
+nav, ul,
+ul li,
+ul li a {
+    height: 20px;
+    display: inline-block;
+}
+
+.shadow {
+    padding: 0.5em 0.4em 0;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7088C5;
+    background-color: #f4f4f4;
+}
+
+.shadow {
+    box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+}
+
+.shadow {
+    border-radius: 0.2em;
+}
+
+html.ie8 fieldset {
+    position: relative;
+    clear: both;
+    border-radius: 0.6em 0 0 0 !important;
+}
+
+html.ie8 legend {
+    position: absolute;
+    background-color: #7EA5B8;
+    border-radius: 0.5em 0 0.5em 0;
+    margin-top: -2.2em;
+    margin-left: -0.5em;
+}
+*/
+
+/* PROPOSTAS DE CSS*/
+.open, .close {
+    min-height: 14px;
+    height: 14px !important;
+    width: 14px !important;
+    line-height: 12px;
+
+    border: 1px solid;        
+    margin-right: 5px;        
+    font-weight: normal;
+    font-size: 12px;
+    padding-right: 1px;
+    border-radius: 1px;
+}
+
+.treeview.circle > li > .open,
+.treeview.circle > li > .close {
+    min-height: 16px;
+    height: 16px !important;
+    width: 16px !important;
+    line-height: 15px;
+    border-radius: 16px;
+}
+
+
+/*input[type="radio"]:-webkit-autofill,
+input[type="checkbox"]:-webkit-autofill,
+input[type="radio"]:-webkit-autofill:hover,
+input[type="checkbox"]:-webkit-autofill:hover,
+input[type="radio"]:-webkit-autofill:active, 
+input[type="checkbox"]:-webkit-autofill:active, 
+input[type="radio"]:-webkit-autofill:visited, 
+input[type="checkbox"]:-webkit-autofill:visited, 
+input[type="radio"]:-webkit-autofill:focus input[type="radio"]:-webkit-autofill,
+input[type="checkbox"]:-webkit-autofill:focus input[type="checkbox"]:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+}*/
+
+
+/*TESTE 30/06/2017 - ADICIONEI PORQUE MESMO O SPAN, STRONG E O LABEL TIVESSE O CLASS .COL OS MESMOS NÃO TINHAM SEU TAMANHO CORRETO*/
+[class^="col-"] {
+    min-height: 20px;
+}
+
+/*
+CSS QUE COLOCA UM FILETE PRA FICAR POR CIMA DA UL QUANDO HÁ ROLAGEM DE ABAS
+*/
+.line-tabs:after, 
+.line-tabs:before {
+    content: "";
+    width: 3px;
+    background-color: #f4f4f4;
+    height: 20px;
+    z-index: 1;
+    position: relative;
+    float: left;
+    margin-bottom: -22px;    
+}
+
+.line-tabs:after {
+    width: 4px;
+    position: fixed;
+    margin-left: -3px;
+    margin-top: -3px;
+}
+
+@-moz-document url-prefix() {
+
+   .line-tabs:after {
+    margin-top: 0;
+   } 
+
+}
+
+
+/*TESTE DE LEGEND COM COL-24*/
+legend.col-24:after {
+    content: "";
+    width: 3px;
+    height: 22px;
+    background-color: #f4f4f4;
+    float: right;
+    margin-right: -8px;
+}
+
+html,body {
+    height: 100%;
+}
+body {
+    position: relative;
+}

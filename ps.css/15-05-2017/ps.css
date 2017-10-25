@@ -1,0 +1,2314 @@
+/* V6 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol, ul {
+    list-style: none
+}
+
+blockquote, q {
+    quotes: none
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/* STYLE PRA DEIXAR A LISTA TABELADA SEM SCROLL VERTICAL */
+/* overflow-y-hidden - DEVE FICAR JUNTO DA CLASE .list */
+
+/* STYLE PRA RETIRAR BORDA DO BOTTOM DO ELEMENTO */
+/* border-bottom-width-0 - DEVE-SE COLOCAR NO ELEMENTO QUE DESEJA TIRAR A BORDA*/
+
+/* ALTERNAR COR DA LISTA TABELADA USA-SE A CLASSE .alternating-color NA DIV ONDE ESTÁ A CLASSE .LIST OU
+DIRETO NA TABLE CASO NÃO EXISTA A DIV COM A CLASSE .LIST */
+
+/* REGRAS DE CSS */
+/* caso o hr ficar abaixo da tag que tiver o class line, deverá ficar com margin-top: 1px e margin-bottom: 1px pra não deixar os campos do line tão longe do hr */
+/* ===============================================================================================================-A-================================================================================================================ */
+
+/* ===============================================================================================================-B-================================================================================================================ */
+/* background-color */
+button {
+    background-color: transparent;
+}
+
+div.list.hover tbody tr:hover,
+table.hover tbody tr:hover  {
+    background-color: #a1beda !important;
+}
+
+div.list.alternating-color div table > tbody > tr:nth-child(2n+2),
+table.alternating-color > tbody > tr:nth-child(2n+2) {
+    background-color: #CFDBE7;
+}
+
+.error,
+.red {
+    background-color: #C90200;
+}
+
+.click tbody tr.selected {
+    background-color: #dad9d9;
+} 
+
+input,
+select,
+textarea,
+div.fake-textarea {
+    background-color: #ffffff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    background-color: transparent;
+}
+
+html.popup,
+html.popup-crm {
+    background-color: #FFFCF4;
+}
+
+html,
+html.adm body,
+.shadow,
+input[disabled],
+input[disabled="disabled"],
+select[disabled],
+select[disabled="disabled"],
+textarea[disabled],
+textarea[disabled="disabled"],
+ul.tabs > li > a,
+fieldset {
+    background-color: #f4f4f4;
+}
+
+.warning,
+.orange {
+    background-color: #F28D00;
+}
+
+.success,
+.green {
+    background-color: #009736;
+}
+
+.primary,
+.blue {
+    background-color: #0166B4;
+}
+
+div.list table thead th.order-Z-a-A:hover,
+div.list table thead th.order-A-a-Z:hover,
+div.list table thead th.selected,
+div.list table thead th.selected + th:last-child,
+div.list table thead th.order-A-a-Z:hover + th:last-child,
+div.list table thead th.order-Z-a-A:hover + th:last-child {
+    background-color: #56717f;
+}
+
+div.list > div:first-child,
+table thead,
+legend {
+    background-color: #7EA5B8;
+}
+
+ul.tabs li a.tab-active,
+ul.tabs li a:hover {
+    background-color: #9BB9C8;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+    background-color: #f4f4f4;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+    background-color: #93a4ad;
+}
+
+/* Fim background-color */
+/* border*/
+html.popup.ie8 {
+    border: 0;
+}
+/* border-color */
+.border-transparent {
+    border-color: transparent !important;
+}
+
+button.grey {
+    border-color: #a6a6a6;
+}
+
+button.warning,
+button.orange {
+    border-color: #b36a06;
+}
+
+button.success,
+button.green {
+    border-color: #025b22;
+}
+
+button.primary,
+button.blue {
+    border-color: #02355d;
+}
+
+div.list > div,
+div.list tr td,
+ul.list li,
+table {
+    border-color: #7EA5B8;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        border-color: #CCCCCC;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+        border-color: #87A6B5;
+}
+/*=============================================================================================================================*/
+.shadow,
+button.default,
+hr {
+    border-color: #7088C5;
+}
+
+button.error,
+button.red {
+    border-color: #970604;
+}
+
+ul.tabs li a {
+    border-color: #CCCCCC;
+}
+
+button.error,
+button.red, {
+    border-color: #C90200;
+}
+
+input,
+select,
+textarea,
+.fake-textarea {
+    /* border-color: #E0E0E0; ESTAVA SEM DESTAQUE QUANDO O CAMPO ESTAVA DESABILITADO NOS BACKGROUND COM A COR #F4F4F4*/
+    border-color: #bdbdbd;
+}
+
+fieldset,
+div.list,
+.frame {
+    border-color: #7EA5B8;
+}
+
+ul.tabs li a.tab-active,
+ul.tabs li a:hover {
+    border-color: #87A6B5;
+}
+
+/* Fim border-color */
+
+/*background-image*/
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after {
+    background-image: url(/plusoft-resources/images/icones/setaAzul.gif);
+}
+
+.line span[class^="col-"]:first-child + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after,
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"]:after {
+    background-image: url("");
+}
+
+/* border-bottom-color */
+
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-color: #ffffff;
+}
+
+table thead {
+    border-bottom-color: #7EA5B8;
+}
+
+/* Fim border-bottom-color */
+
+/* border-right-color */
+/*div.list > div {
+    border-right-color: #7EA5B8;
+}*/
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-color: transparent;
+}
+/* Fim border-right-color */
+div.list table thead th.order-A-a-Z:before {
+    border-top-color: #ffffff;
+}
+
+/* border-bottom-style */
+table thead,
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-style: solid;
+}
+
+/* Fim border-bottom-style */
+
+/* border-bottom-width */
+table thead {
+    border-bottom-width: 2px;
+}
+
+div.list table thead {
+    border-bottom-width: 0;
+}
+
+div.list table thead th.order-Z-a-A:after {
+    border-bottom-width: 5px;
+}
+
+/* Fim border-bottom-width */
+
+/* border-left-width */
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-width: 5px;
+}
+
+/* Fim border-left-width */
+
+/* border-right-width */
+
+/*div.list > div {
+    border-right-width: 2px;
+}*/
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-width: 5px;
+}
+
+/* Fim border-right-width */
+
+/* border-top-width */
+div.list table thead th.order-A-a-Z:before {
+    border-top-width: 5px;
+}
+
+/* Fim border-top-width */
+
+/* border-left-color */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-color: transparent;
+}
+
+/* Fim border-left-color */
+
+/* border-left-style */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-left-style: solid;
+}
+
+/* border-left-style */
+
+/* border-right-style */
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    border-right-style: solid;
+}
+
+/* Fim border-right-style */
+div.list table thead th.order-A-a-Z:before {
+    border-top-style: solid;
+}
+
+/* border-radius */
+fieldset,
+ul.tabs + .shadow {
+    border-bottom-left-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+fieldset,
+ul.tabs + .shadow {
+    border-bottom-right-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+legend {
+    border-bottom-right-radius: 0.5em;
+}
+
+ul.tabs + .shadow {
+    border-top-left-radius: 0
+}
+
+.shadow,
+div.list div table th:first-child {
+    border-top-left-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+}
+
+ul.tabs li a,
+legend {
+    border-top-left-radius: 0.5em;
+}
+
+fieldset {
+    border-top-left-radius: 0.6em;
+}
+
+ul.tabs + .shadow {
+    border-top-right-radius: 0
+}
+
+fieldset,
+ul.tabs + .shadow,
+div.list div table th:last-child {
+    border-top-right-radius: 0.2em; /* PEQUENA QUEBRA DE PONTA */
+
+}
+
+ul.tabs li a {
+    border-top-right-radius: 0.5em;
+}
+
+input,
+select,
+textarea,
+div.list,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    border-radius: 0.2em;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border-radius: inherit;
+}
+
+/* Fim border-radius */
+
+/* border-style */
+ul.tabs li a,
+.shadow,
+input,
+select,
+textarea,
+select,
+textarea,
+fieldset,
+div.list > div,
+table,
+div.list tr td,
+ul.list li,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+.fake-textarea,
+.frame,
+hr {
+    border-style: solid;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border-style: inherit;
+}
+/* Fim border-style */
+/* border-width */
+button,
+div.list table {
+    border-width: 0;
+}
+
+.shadow,
+input,
+select,
+textarea,
+select,
+textarea,
+fieldset,
+div.list > div,
+table,
+button.default,
+button.grey,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+.fake-textarea,
+.frame {
+    border-width: 1px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    border-width: inherit;
+}
+
+/* Fim border-width */
+/* border-width */
+ul.list > li > ul > li {
+    border-width: 0;
+}
+
+ul.tabs li a,
+.border-bottom-width-0,
+hr {
+    border-bottom-width: 0;
+}
+
+div.list tr td,
+ul.list li {
+    border-bottom-width: 1px;
+}
+
+ul.tabs li a {
+    border-width: 0.15em 0.1em 0;
+}
+
+/* Fim border-width */
+
+/* box-shadow */
+button.grey:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #a6a6a6;
+}
+
+button.primary:hover,
+button.blue:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #02355d;
+}
+
+button.success:hover,
+button.green:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #025b22;
+}
+
+button.warning:hover,
+button.orange:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #b36a06;
+}
+
+.shadow,
+button.default:hover,
+ul.tabs li a:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+}
+
+button.error:hover,
+button.red:hover {
+    box-shadow: 0.01em 0.01em 0.3em 0 #970604;
+}
+
+button[disabled]:hover,
+button[disabled="disabled"]:hover,
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        box-shadow: rgb(112, 136, 197) 0 0 0 0;;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+        box-shadow: rgb(112, 136, 197) 0 0 0 0;
+}
+
+/* Fim box-shadow */
+
+/* box-sizing */
+[class^="col-"],
+fieldset,
+div.list,
+input,
+select,
+textarea,
+a,
+span,
+strong,
+label,
+th,
+td,
+li,
+legend,
+button,
+.frame,
+.shadow {
+    box-sizing: border-box;
+}
+/* Fim  box-sizing */
+/* ===============================================================================================================-C-================================================================================================================ */
+/* color */
+ul.tabs li a.tab-active,
+ul.tabs li a:hover,
+th,
+legend,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    color: #ffffff;
+}
+
+.color-red,
+label.mandatory:after {
+    color: #da1a1a;
+}
+
+.color-blue {
+    color: #0166B4;
+}
+
+ul.tabs li a {
+    color: #87A6B5;
+}
+
+.header-transparent tr th,
+button.grey {
+    color: #000000;
+}
+
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+    color: #a5a3a3;
+}
+
+ul.tabs li a.tab-active[disabled],
+ul.tabs li a.tab-active[disabled="disabled"],
+ul.tabs li a.tab-active:hover[disabled],
+ul.tabs li a.tab-active:hover[disabled="disabled"] {
+    color: #e6e6e6;
+}
+/* Fim color */
+
+/* cursor */
+span[title],
+img[title],
+label[title],
+button:hover,
+div.list table thead th.order-Z-a-A:hover,
+div.list table thead th.order-A-a-Z:hover,
+ul.tabs li a,
+div.list.hover tbody tr:hover,
+table.hover tbody tr:hover,
+.click tbody tr.selected {
+    cursor: pointer;
+}
+
+button[disabled]:hover,
+button[disabled="disabled"]:hover,
+ul.tabs li a[disabled],
+ul.tabs li a[disabled="disabled"],
+ul.tabs li a:hover[disabled],
+ul.tabs li a:hover[disabled="disabled"] {
+        cursor: default;
+}
+
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before,
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after {
+    content: "";
+}
+
+label.mandatory:after {
+    content: "*";
+}
+
+/* Fim cursor */
+/* ===============================================================================================================-D-================================================================================================================ */
+/* display */
+[class^="col-"] label + input[type="checkbox"],
+[class^="col-"] label + input[type="radio"],
+.label-break {
+    display: block;
+}
+
+/* .line > label[class^="col-"].align-left:after, 
+.line > span[class^="col-"].align-left:after, 
+.line > strong[class^="col-"].align-left:after {
+    display: none
+} */
+
+ul.tabs,
+ul.tabs li,
+ul.tabs li a,
+div.pagination.list + .pagination span,
+ul.list > li > ul > li,
+.line,
+label,
+span,
+div,
+.frame {
+    display: inline-block;
+}
+
+/* Fim display */
+/* ===============================================================================================================-E-================================================================================================================ */
+
+/* ===============================================================================================================-F-================================================================================================================ */
+/* float */
+label input,
+label select {
+    float: inherit;
+}
+
+[class^="col-"],
+legend,
+nav,
+ul.tabs li,
+fieldset,
+.frame {
+    float: left;
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before,
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after,
+button > span {
+    float: right;
+}
+
+/* Fim float */
+
+/* font-family */
+body * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Fim font-family */
+
+/* font-size */
+body * {
+    font-size: 11px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2.4em;
+}
+
+h4 {
+    font-size: 2.1em;
+}
+
+h5 {
+    font-size: 1.8em;
+}
+
+h6 {
+    font-size: 1.5em;
+}
+
+/* Fim font-size */
+
+/* font-weight */
+strong,
+fieldset legend,
+table th,
+ul.tabs li a {
+    font-weight: bold;
+}
+
+/* Fim font-weight */
+/* ===============================================================================================================-G-================================================================================================================ */
+
+/* ===============================================================================================================-H-================================================================================================================ */
+[class^="col-"].col-break {
+    height: initial !important;
+}
+
+button.default,
+button.grey,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue,
+input[type="radio"],
+input[type="checkbox"] {
+    height: inherit;
+}
+
+span,
+label,
+th button,
+td button {
+    height: inherit !important;
+}
+
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after {
+    height: 7px;
+}
+
+.checkRed {
+    height: 12px;
+}
+
+input,
+li,
+legend,
+label,
+.col-break {
+    height: 18px;
+}
+
+nav,
+ul.tabs,
+ul.tabs li,
+ul.tabs li a,
+.refresh {
+    height: 20px;
+}
+
+html.crm body {
+    height: 218px;
+}
+
+html.adm form > .tabs + div.shadow > div:first-child div.list div:first-child + div {
+    height: 470px;
+}
+
+html.adm form > .tabs + div.shadow {
+    height: 550px;
+}
+
+/* ===============================================================================================================-I-================================================================================================================ */
+
+/* ===============================================================================================================-J-================================================================================================================ */
+
+/* ===============================================================================================================-K-================================================================================================================ */
+
+/* ===============================================================================================================-L-================================================================================================================ */
+.label-break {
+    line-height: 10px;
+}
+
+.line,
+html.ie8 input {
+    line-height: 14px;
+}
+
+input,
+select,
+.col-break,
+.bt_selecionar_sim,
+.bt_selecionar_nao,
+p,
+legend {
+    line-height: 16px;
+}
+
+br {
+    line-height: 17px;
+}
+
+li,
+a,
+label,
+span[class^="col-"],
+strong[class^="col-"],
+th,
+td,
+span,
+label,
+strong {
+    line-height: 18px;
+}
+
+body form.shadow > .shadow + .line.align-right {
+    line-height: 16px;
+}
+
+/* ===============================================================================================================-M-================================================================================================================ */
+div[class^="col-"].align-center > button {
+    margin: 0;
+}
+
+legend {
+    margin: -2.3em -0.6em;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin: 0 0.3em;
+}
+
+div.list.pagination + .pagination button {
+    margin: 0 0.5em;
+}
+
+div[class^="col-"] > .line {
+    /*margin-bottom: 0;*/
+}
+
+div.list > div + div {
+    margin-bottom: -2px;
+}
+
+.line {
+    margin-bottom: 3px;
+}
+
+div.list {
+    margin-bottom: 5px;
+}
+
+.shadow {
+    margin-bottom: 2px;
+}
+
+.line + hr {
+    margin-bottom: 1px;
+}
+
+fieldset {
+    margin-bottom: 6px;
+}
+
+fieldset > legend + textarea {
+    margin-bottom: 0.8em;
+}
+
+/*div[class^="col-"] > div.list,
+div[class^="col-"] > fieldset,*/
+div[class^="col-"] > button,
+div[class^="col-"] > label,
+div.list table thead th.order-Z-a-A.order-A-a-Z:before,
+div.list.pagination + .pagination label,
+div.list table,
+html.adm body > form {
+    margin-left: 0;
+}
+
+label.mandatory:after {
+    margin-left: 2px;
+}
+
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after,
+button > span {
+    margin-left: 3px;
+}
+
+.line.align-right > button,
+[class^="col-"].align-right > button {
+    margin-left: 5px
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    margin-left: 7px;
+}
+
+.line [class^="col-"],
+div.list,
+table,
+label,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+.frame,
+nav,
+ul.tabs,
+.shadow {
+    margin-left: 0.5%;
+}
+
+.offset-1 {
+    margin-left: 4.2% !important;
+}
+
+.offset-2 {
+    margin-left: 8.33% !important;
+}
+
+.offset-3 {
+    margin-left: 12.5% !important;
+}
+
+.offset-4 {
+    margin-left: 17.1% !important;
+}
+
+.offset-5 {
+    margin-left: 21.225% !important;
+}
+
+.offset-6 {
+    margin-left: 25.38% !important;
+}
+
+.offset-7 {
+    margin-left: 29.56% !important;
+}
+
+.offset-8 {
+    margin-left: 33.7% !important;
+}
+
+.offset-9 {
+    margin-left: 37.85% !important;
+}
+
+.offset-10 {
+    margin-left: 41.98% !important;
+}
+
+.offset-11 {
+    margin-left: 46.15% !important;
+}
+
+.offset-12 {
+    margin-left: 50.29% !important;
+}
+
+/* FALTA DAQUI PRA BAIXO PRA AJUSTAR =) */
+.offset-13 {
+    margin-left: 54.4% !important;
+}
+
+.offset-14 {
+    margin-left: 58.56% !important;
+}
+
+.offset-15 {
+    margin-left: 62.7% !important;
+}
+
+.offset-16 {
+    margin-left: 66.86% !important;
+}
+
+.offset-17 {
+    margin-left: 71% !important;
+}
+
+.offset-18 {
+    margin-left: 75.15% !important;
+}
+
+.offset-19 {
+    margin-left: 79.04% !important;
+}
+
+.offset-20 {
+    margin-left: 83.2% !important;
+}
+
+.offset-21 {
+    margin-left: 87.36% !important;
+}
+
+.offset-22 {
+    margin-left: 91.51% !important;
+}
+
+.offset-23 {
+    margin-left: 95.67% !important;
+}
+
+div.list table thead th.order-A-a-Z.order-Z-a-A:after {
+    margin-right: -10px;
+}
+
+.line.align-right > button,
+[class^="col-"].align-right > button {
+    margin-right: 0;
+}
+
+div[class^="col-"].align-center > button + button {
+    margin-right: 2px;
+}
+
+
+.line > button,
+[class^="col-"] > button {
+    margin-right: 5px;
+}
+
+ul.tabs {
+    margin-bottom: -2px;
+}
+
+div.list > div:first-child {
+    margin-bottom: -3px;
+}
+
+button {
+    margin-top: 0;
+}
+
+/* estiliza pelo src */
+/*[src~="/plusoft-resources/images/botoes/new.gif"] {
+    margin-top: 2px;
+}
+*/
+div.list > div:first-child + div {
+    margin-top: 1px;
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    margin-top: 0;
+}
+
+.line + hr {
+    margin-top: -1px;
+}
+
+div.list table thead th.order-A-a-Z.order-Z-a-A:after {
+    margin-top: 2px;
+}
+
+/* [class^="col-"] label + input[type="checkbox"],
+[class^="col-"] label + input[type="radio"] {
+    margin-top: 3px;
+} */
+
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after {
+    margin-top: 6px;
+}
+
+div.list table thead th.order-Z-a-A.order-A-a-Z:before {
+    margin-top: 9px;
+}
+
+.col-break {
+    margin-top: 18px;
+}
+
+.line + hr + .line {
+    margin-top: 0.3em;
+}
+
+html.adm body > form {
+    margin-top: -0.2em;
+}
+
+th button > img,
+td button > img {
+    max-height: 26px;
+    /*max-height: 18px;*/
+}
+
+button > img {
+    max-height: 20px;
+}
+
+select,
+button {
+    min-height: 18px;
+}
+
+.fake-textarea,
+textarea {
+    min-height: 30px;
+}
+
+fieldset > legend + textarea {
+    margin-top: 0.3em;
+}
+
+/* ===============================================================================================================-N-================================================================================================================ */
+
+/* ===============================================================================================================-O-================================================================================================================ */
+/* outline-width: inherit => REMOVE A BORDA DO BOTÃO QUANDO TINHA FOCU*/
+button {
+    outline-width: inherit;
+}
+
+button[disabled],
+button[disabled="disabled"],
+button[disabled] > img,
+button[disabled="disabled"] > img {
+    opacity: 0.7;
+}
+
+.scroll-horizontal > div:first-child + div {
+    overflow: scroll;
+}
+
+html.adm form > .tabs + div.shadow {
+    overflow: auto;
+}
+
+/* overflow-y */
+html.adm,
+.scroll-horizontal > div:first-child {
+    overflow: hidden;
+}
+
+.fake-textarea,
+ul.list,
+div.list > div:first-child + div,
+textarea {
+    overflow-y: scroll;
+}
+
+html.crm,
+html.crm body {
+    overflow-y: auto;
+}
+
+/* Fim overflow-y */
+div.list > div:first-child + div,
+.fake-textarea {
+    overflow-x: hidden;
+}
+
+div.list.overflow-y-hidden > div:first-child + div {
+    overflow-y: hidden;
+}
+
+/* ===============================================================================================================-P-================================================================================================================ */
+button,
+html.popup.ie8 {
+    padding: 0;
+}
+
+form.shadow > .line.align-right {
+    padding: 3px 0;
+}
+
+fieldset {
+    padding: 25px 5px 5px;
+}
+
+.frame {
+    padding: 0.5em 0.4em 0;
+}
+
+button.default,
+button.grey,
+button.error,
+button.red,
+button.warning,
+button.orange,
+button.success,
+button.green,
+button.primary,
+button.blue {
+    /*padding: 0 0.5em 0;*/
+    padding: 0 7px;
+}
+
+div.list > div:first-child table thead th:last-child {
+    padding: 0 0.8em;
+}
+
+.shadow {
+    padding: 0.5em 0.4em 0;
+}
+
+p {
+    padding: 0.5em;
+}
+
+select {
+  padding: 0 2px;
+}
+
+html.popup body {
+    padding: 5px;
+}
+
+/* ESSE ESTILO DEVE SER USADO NO POPUP QUE É CHAMADO DIRETO PELO CRM*/
+html.popup-crm body {
+    padding: 5px 9px 5px 5px;
+}
+
+legend {
+    padding-bottom: 0.1em;
+}
+
+.line div[class^="col-"] {
+    padding-left: 0;
+}
+
+html.crm body {
+    padding-left: 12px;
+}
+
+legend {
+    padding-left: 1em;
+}
+
+legend {
+    padding-right: 1em;
+}
+
+select {
+    padding-right: 0;
+}
+
+html {
+    padding: 0.1em;
+}
+
+th,
+td {
+    padding: 1px 4px;
+}
+
+ul li a {
+    padding: 0 1em;
+}
+
+html.crm body {
+    padding-top: 5px;
+}
+
+html.crm {
+    padding-top: 5px;
+}
+
+.label-break {
+    padding-top: 0.32em;
+}
+
+/* ===============================================================================================================-Q-================================================================================================================ */
+
+/* ===============================================================================================================-R-================================================================================================================ */
+textarea {
+    resize: none;
+}
+
+/* ===============================================================================================================-S-================================================================================================================ */
+
+/* ===============================================================================================================-T-================================================================================================================ */
+legend,
+label,
+span,
+strong,
+div,
+th,
+.line span[class^="col-"]:first-child + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"],
+.line span[class^="col-"]:first-child + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] + span[class^="col-"] {
+    text-align: left;
+}
+
+.align-left,
+.line span[class^="col-"]:first-child + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"],
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] {
+    text-align: left !important;
+}
+
+.line span[class^="col-"]:first-child + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line span[class^="col-"]:first-child + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"].align-center, 
+.line strong[class^="col-"]:first-child + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-"] + strong[class^="col-"] + span[class^="col-.align-center"],
+.align-center {
+    text-align: center !important;
+}
+
+.line > label[class^="col-"],
+.line > span[class^="col-"],
+.line > strong[class^="col-"],
+.align-right {
+    text-align: right;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.capitalize,
+td[class^="email"] {
+    text-transform: none;
+}
+
+/* ===============================================================================================================-U-================================================================================================================ */
+
+/* ===============================================================================================================-V-================================================================================================================ */
+
+button > img {
+    vertical-align: middle;
+}
+
+input[type="checkbox"],
+label input[type="radio"] {
+    vertical-align: bottom
+}
+
+label input[type="checkbox"],
+label input[type="radio"] {
+    vertical-align: middle;
+}
+
+th,
+td,
+button,
+input,
+select,
+textarea {
+    vertical-align: middle;
+}
+
+td .checkRed,
+td > img,
+[class^="col-"] > img {
+    vertical-align: sub;
+}
+
+span > input[type="radio"],
+span > input[type="checkbox"],
+strong > input[type="radio"],
+strong > input[type="checkbox"] {
+    vertical-align: text-bottom;
+}
+
+div.list table thead th.order-Z-a-A:after,
+div.list table thead th.order-A-a-Z:before {
+    vertical-align: text-top;
+}
+
+html.modern-browser {
+    visibility: hidden;
+}
+
+/* ===============================================================================================================-W-================================================================================================================ */
+
+div.list.pagination + .pagination label {
+    width: initial;
+}
+
+.line > label[class^="col-"]:after,
+.line > span[class^="col-"]:after,
+.line > strong[class^="col-"]:after {
+    width: 7px;
+}
+
+td .col-1,
+.line .col-1,
+fieldset.col-1,
+.frame.col-1,
+.list.col-1,
+.tabs.col-1 {
+    width: 3.65% !important;
+}
+
+div.col-1 {
+    width: 4.146%;
+    padding-left: 0.46%;
+}
+
+td .col-2,
+.line .col-2,
+fieldset.col-2,
+.frame.col-2,
+.list.col-2,
+.tabs.col-2 {
+    width: 7.8% !important;
+}
+
+div.col-2 {
+    width: 8.294%;
+    padding-left: 0.45%;
+}
+
+td .col-3,
+.line .col-3,
+fieldset.col-3,
+.frame.col-3,
+.list.col-3,
+.tabs.col-3 {
+    width: 11.94% !important;
+}
+
+div.col-3 {
+    width: 12.442%;
+    padding-left: 0.45%;
+}
+
+th.codigo,
+td.codigo {
+    width: 15%;
+}
+
+td .col-4,
+.line .col-4,
+fieldset.col-4,
+.frame.col-4,
+.list.col-4,
+.tabs.col-4 {
+    width: 16.09% !important;
+}
+
+div.col-4 {
+    width: 16.592%;
+    padding-left: 0.4%;
+}
+
+th.inativo,
+td.inativo {
+    width: 20%;
+}
+
+td .col-5,
+.line .col-5,
+fieldset.col-5,
+.frame.col-5,
+.list.col-5,
+.tabs.col-5 {
+    width: 20.24% !important;
+}
+
+div.col-5 {
+    width: 20.74%;
+    padding-left: 0.37%;
+}
+
+td .col-6,
+.line .col-6,
+fieldset.col-6,
+.frame.col-6,
+.list.col-6,
+.tabs.col-6 {
+    width: 24.38% !important;
+}
+
+div.col-6 {
+    width: 24.898%;
+    padding-left: 0.35%;
+}
+
+td .col-7,
+.line .col-7,
+fieldset.col-7,
+.frame.col-7,
+.list.col-7,
+.tabs.col-7 {
+    width: 28.53% !important;
+}
+
+div.col-7 {
+    width: 29.03%;
+    padding-left: 0.33%;
+}
+
+td .col-8,
+.line .col-8,
+fieldset.col-8,
+.frame.col-8,
+.list.col-8,
+.tabs.col-8 {
+    width: 32.68% !important;
+}
+
+div.col-8 {
+    width: 33.21%;
+    padding-left: 0.31%;
+}
+
+td .col-9,
+.line .col-9,
+fieldset.col-9,
+.frame.col-9,
+.list.col-9,
+.tabs.col-9 {
+    width: 36.83% !important;
+}
+
+div.col-9 {
+    width: 37.345%;
+    padding-left: 0.29%;
+}
+
+td .col-10,
+.line .col-10,
+fieldset.col-10,
+.frame.col-10,
+.list.col-10,
+.tabs.col-10 {
+    width: 40.97% !important;
+}
+
+div.col-10 {
+    width: 41.48% !important;
+    padding-left: 0.27%;
+}
+
+td .col-11,
+.line .col-11,
+fieldset.col-11,
+.frame.col-11,
+.list.col-11,
+.tabs.col-11 {
+    width: 45.12% !important;
+}
+
+div.col-11 {
+    width: 45.62% !important;
+    padding-left: 0.246%;
+}
+
+td .col-12,
+.line .col-12,
+fieldset.col-12,
+.frame.col-12,
+.list.col-12,
+.tabs.col-12 {
+    width: 49.26% !important;
+}
+
+div.col-12 {
+    width: 49.85% !important;
+    padding-left: 0.23%;
+}
+
+td .col-13,
+.line .col-13,
+fieldset.col-13,
+.frame.col-13,
+.list.col-13,
+.tabs.col-13 {
+    width: 53.4% !important;
+}
+
+div.col-13 {
+    width: 54.06% !important;
+    padding-left: 0.21%;
+}
+
+td .col-14,
+.line .col-14,
+fieldset.col-14,
+.frame.col-14,
+.list.col-14,
+.tabs.col-14 {
+    width: 57.56% !important;
+}
+
+div.col-14 {
+    width: 58.18% !important;
+    padding-left: 0.18%;
+}
+
+th.descricao,
+td.descricao {
+    width: 60%;
+}
+
+td .col-15,
+.line .col-15,
+fieldset.col-15,
+.frame.col-15,
+.list.col-15,
+.tabs.col-15 {
+    width: 61.69% !important;
+}
+
+div.col-15 {
+    width: 62.3% !important;
+    padding-left: 0.155%;
+}
+
+td .col-16,
+.line .col-16,
+fieldset.col-16,
+.frame.col-16,
+.list.col-16,
+.tabs.col-16 {
+    width: 65.87% !important;
+}
+
+div.col-16 {
+    width: 66.4% !important;
+    padding-left: 0.134%;
+}
+
+td .col-17,
+.line .col-17,
+fieldset.col-17,
+.frame.col-17,
+.list.col-17,
+.tabs.col-17 {
+    width: 69.99% !important;
+}
+
+div.col-17 {
+    width: 70.6% !important;
+    padding-left: 0.113%;
+}
+
+td .col-18,
+.line .col-18,
+fieldset.col-18,
+.frame.col-18,
+.list.col-18,
+.tabs.col-18 {
+    width: 74.15% !important;
+}
+
+div.col-18 {
+    width: 74.696% !important;
+    padding-left: 0.093%;
+}
+
+td .col-19,
+.line .col-19,
+fieldset.col-19,
+.frame.col-19,
+.list.col-19,
+.tabs.col-19 {
+    width: 78.3% !important;
+}
+
+div.col-19 {
+    width: 78.84% !important;
+    padding-left: 0.071%;
+}
+
+td .col-20,
+.line .col-20,
+fieldset.col-20,
+.frame.col-20,
+.list.col-20,
+.tabs.col-20 {
+    width: 82.43% !important;
+}
+
+div.col-20 {
+    width: 82.964% !important;
+    padding-left: 0.06%;
+}
+
+td .col-21,
+.line .col-21,
+fieldset.col-21,
+.frame.col-21,
+.list.col-21,
+.tabs.col-21 {
+    width: 86.6% !important;
+}
+
+div.col-21 {
+    width: 87.1% !important;
+    padding-left: 0.03%;
+}
+
+td .col-22,
+.line .col-22,
+fieldset.col-22,
+.frame.col-22,
+.list.col-22,
+.tabs.col-22 {
+    width: 90.74% !important;
+}
+
+div.col-22 {
+    width: 91.225% !important;
+    padding-left: 0.009%;
+}
+
+td .col-23,
+.line .col-23,
+fieldset.col-23,
+.frame.col-23,
+.list.col-23,
+.tabs.col-23 {
+    width: 94.88% !important;
+}
+
+div.col-23 {
+    width: 95.36% !important;
+}
+
+p {
+    width: 97.5%;
+}
+
+hr {
+    width: 98.8%;
+}
+
+div.list,
+table,
+.frame,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+ul.tabs,
+.shadow {
+    width: 99%;
+}
+
+td .col-24,
+.line .col-24,
+fieldset.col-24,
+.frame.col-24,
+.list.col-24,
+.tabs.col-24,
+fieldset > .tabs + .shadow {
+    width: 99.06%;
+}
+
+fieldset > [class^="col-"] > div.list {
+    width: 99.7% !important;
+}
+
+div.col-24 {
+    width: 99.925%;
+}
+
+.line [class^="col-"] input,
+.line [class^="col-"] select,
+.line [class^="col-"] textarea,
+.line [class^="col-"] strong,
+.line,
+td input,
+td select,
+td textarea,
+fieldset,
+div,
+div.list table,
+html.adm body > form {
+    width: 100%;
+}
+
+.line [class^="col-"] input[type="radio"],
+.line [class^="col-"] input[type="checkbox"],
+td input[type="radio"],
+td input[type="checkbox"] {
+    width: auto;
+}
+/* ===============================================================================================================-X-================================================================================================================ */
+
+/* ===============================================================================================================-Y-================================================================================================================ */
+
+/* ===============================================================================================================-Z-================================================================================================================ */
+
+@-moz-document url-prefix() {
+    /* ============================================================================================================-A-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-B-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    .shadow,
+    button.default:hover,
+    ul li a:hover {
+        -moz-box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+    }
+    /* ============================================================================================================-C-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-D-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-E-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-F-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-G-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-H-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-I-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-J-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-K-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-L-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    input,
+    select,
+    a,
+    th,
+    td,
+    li,
+    button,
+    .col-break,
+    legend {
+        line-height: 18px;
+    }
+    /* ============================================================================================================-M-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    .line.align-right > button,
+    div.list table thead th.order-Z-a-A.order-A-a-Z:before {
+        margin-left: 0;
+    }
+
+    /*firefox*/
+    .checkbox-checked-all-true {
+        margin-right: -6px !important;
+    }
+
+    /*firefox*/
+    legend {
+        margin: -2.2em -0.5em;
+    }
+    
+    /*firefox*/
+    .offset-2 {
+        margin-left: 8.35% !important;
+    }
+    
+    /*firefox*/
+    .offset-3 {
+        margin-left: 12.45% !important;
+    }
+
+    /*firefox*/
+    .offset-5 {
+        margin-left: 21.225% !important;
+    }
+
+    /*firefox*/
+    .offset-7 {
+        margin-left: 29.55% !important;
+    }
+    /*firefox*/
+    .offset-9 {
+        margin-left: 37.805% !important;
+    }
+
+    /*firefox*/
+    button > img {
+        margin-top: -1px;
+    }
+
+    /*firefox*/
+    td button.lixeira {
+        margin-top: -5px;
+    }
+    
+    /*firefox*/
+    div.list > div:first-child + div {
+        margin-top: 0;
+    }
+    /* ============================================================================================================-N-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-O-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-P-FIREFOX-============================================================================================================= */
+    /*firefox*/    
+    html {
+        padding: 0 2px
+    }
+
+    /*firefox*/
+    html.popup-crm body {
+        padding: 5px;
+    }
+    /* ============================================================================================================-Q-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-R-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-S-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-T-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-U-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-V-FIREFOX-============================================================================================================= */
+    /*firefox*/
+    button > img {
+        vertical-align: initial;
+    }
+    /* ============================================================================================================-W-FIREFOX-============================================================================================================= */
+
+    /*firefox*/
+    .line .col-2 {
+        width: 7.794% !important;
+    }
+
+    /*firefox*/
+    .line .col-3 {
+        width: 11.944% !important;
+    }
+
+    /*firefox*/
+    .line .col-6 {
+        width: 24.39% !important;
+    }
+
+    /* ============================================================================================================-X-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-Y-FIREFOX-============================================================================================================= */
+
+    /* ============================================================================================================-Z-FIREFOX-============================================================================================================= */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    /* =============================================================================================================-A-CHROME-============================================================================================================= */
+    /* =============================================================================================================-B-CHROME-============================================================================================================= */
+    /*chrome*/
+    .shadow,
+    /* button.default:hover, */
+    ul li a:hover {
+        -webkit-box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+    }
+
+    /* =============================================================================================================-C-CHROME-============================================================================================================= */
+    /* =============================================================================================================-D-CHROME-============================================================================================================= */
+    /* =============================================================================================================-E-CHROME-============================================================================================================= */
+    /* =============================================================================================================-F-CHROME-============================================================================================================= */
+    /* =============================================================================================================-G-CHROME-============================================================================================================= */
+    /* =============================================================================================================-H-CHROME-============================================================================================================= */
+    /* =============================================================================================================-I-CHROME-============================================================================================================= */
+    /* =============================================================================================================-J-CHROME-============================================================================================================= */
+    /* =============================================================================================================-K-CHROME-============================================================================================================= */
+    /* =============================================================================================================-L-CHROME-============================================================================================================= */
+    /* =============================================================================================================-M-CHROME-============================================================================================================= */
+    /*chrome*/
+    legend {
+        margin: -2.3em -0.4em;
+    }
+
+    /*chrome*/
+    div.list > div + div {
+        margin-bottom: 0;
+    }
+
+    /*chrome*/
+    .offset-1 {
+        margin-left: 4.15% !important;
+    }
+
+    /*chrome*/
+    .offset-3 {
+        margin-left: 12.4% !important;
+    }
+
+    /*chrome*/
+    .offset-5 {
+        margin-left: 21.225% !important;
+    }
+
+    /*chrome*/
+    .offset-7 {
+        margin-left: 29.5% !important;
+    }
+
+    /*chrome*/
+    .offset-8 {
+        margin-left: 33.65% !important;
+    }
+
+    /*chrome*/
+    .offset-9 {
+        margin-left: 37.81% !important;
+    }
+
+    /*chrome*/
+    .offset-10 {
+        margin-left: 41.95% !important;
+    }
+
+    /*chrome*/
+    .offset-11 {
+        margin-left: 46.1% !important;
+    }
+
+    /*chrome*/
+    .offset-12 {
+        margin-left: 50.26% !important;
+    }
+
+    /*chrome*/
+    .col-break > .setaDown {
+        margin-top: -1px;
+    }
+    
+    /*chrome*/
+    div.list > div:first-child + div {
+        margin-top: 0;
+    }
+    /* =============================================================================================================-N-CHROME-============================================================================================================= */
+    /* =============================================================================================================-O-CHROME-============================================================================================================= */
+    /* =============================================================================================================-P-CHROME-============================================================================================================= */
+    /*chrome*/
+    div.list > div:first-child table thead th:last-child {
+        padding: 0 0.7em;
+    }
+
+    /*chrome*/
+    div.list.scroll-horizontal > div:first-child table thead th:last-child {
+        padding: 0 1.8em;
+    }
+    
+    /*chrome*/
+    html.popup-crm body {
+        padding: 5px;
+    }
+    /* =============================================================================================================-Q-CHROME-============================================================================================================= */
+    /* =============================================================================================================-R-CHROME-============================================================================================================= */
+    /* =============================================================================================================-S-CHROME-============================================================================================================= */
+    /* =============================================================================================================-T-CHROME-============================================================================================================= */
+    /* =============================================================================================================-U-CHROME-============================================================================================================= */
+    /* =============================================================================================================-V-CHROME-============================================================================================================= */
+    /* =============================================================================================================-W-CHROME-============================================================================================================= */
+    /*chrome*/
+    .line .col-1 {
+        width: 3.647% !important;
+    }
+
+    /*chrome*/
+    .line .col-2 {
+        width: 7.794% !important;
+    }
+
+    /*chrome*/
+    .line .col-3 {
+        width: 11.945% !important;
+    }
+
+    /*chrome*/
+    .line .col-6 {
+        width: 24.39% !important;
+    }
+
+    /*chrome*/
+    fieldset {
+        /*width: 99.75%;*/
+        width: 100%;
+    }
+
+    /* =============================================================================================================-X-CHROME-============================================================================================================= */
+    /* =============================================================================================================-Y-CHROME-============================================================================================================= */
+    /* =============================================================================================================-Z-CHROME-============================================================================================================= */
+}
+/*
+ul li a.tab-active,
+ul li a:hover {
+    color: #ffffff;
+    border-color: #87A6B5;
+    background-color: #9BB9C8;
+    text-decoration: none;
+    padding: 0 1em;
+    font-weight: bold;
+    border-width: 0.15em 0.1em 0;
+    border-style: solid;
+    border-radius: 0.5em 0.5em 0 0;
+    line-height: 18px;
+}
+
+ul.tabs li a {
+    text-decoration: none;
+    padding: 0 1em;
+    font-weight: bold;
+    border-width: 0.15em 0.1em 0;
+    border-style: solid;
+    border-radius: 0.5em 0.5em 0 0;
+    line-height: 18px;
+    border-color: #CCCCCC;
+    color: #87A6B5;
+}
+
+html.popup {
+    display: inline;
+}
+
+nav, ul,
+ul li,
+ul li a {
+    height: 20px;
+    display: inline-block;
+}
+
+.shadow {
+    padding: 0.5em 0.4em 0;
+    box-sizing: border-box;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #7088C5;
+    background-color: #f4f4f4;
+}
+
+.shadow {
+    box-shadow: 0.01em 0.01em 0.3em 0 #7088C5;
+}
+
+.shadow {
+    border-radius: 0.2em;
+}
+
+html.ie8 fieldset {
+    position: relative;
+    clear: both;
+    border-radius: 0.6em 0 0 0 !important;
+}
+
+html.ie8 legend {
+    position: absolute;
+    background-color: #7EA5B8;
+    border-radius: 0.5em 0 0.5em 0;
+    margin-top: -2.2em;
+    margin-left: -0.5em;
+}
+*/
